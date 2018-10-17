@@ -25,6 +25,7 @@ namespace encrypt
             {
                 string chars = " ";
 
+                chars += (char)1028;
                 chars += (char)1030;
                 chars += (char)1031;
 
@@ -33,6 +34,7 @@ namespace encrypt
                         && c != 1098 && c != 1099 & c != 1101)
                             chars += (char)c;
 
+                chars += (char)1108;
                 chars += (char)1110;
                 chars += (char)1111;
 
