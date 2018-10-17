@@ -28,8 +28,10 @@ namespace encrypt
                 chars += (char)1030;
                 chars += (char)1031;
 
-                for (int i = 1040; i < 1104; i++)
-                    chars += (char)i;
+                for (int c = 1040; c < 1104; c++)
+                    if (c != 1066 && c != 1067 && c != 1069
+                        && c != 1098 && c != 1099 & c != 1101)
+                            chars += (char)c;
 
                 chars += (char)1110;
                 chars += (char)1111;
