@@ -23,7 +23,7 @@ namespace encrypt
             }
             else
             {
-                string chars = " ";
+                string chars = "";
 
                 chars += (char)1028;
                 chars += (char)1030;
