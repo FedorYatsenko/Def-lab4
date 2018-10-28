@@ -39,10 +39,13 @@ namespace encrypt
                 chars += (char)1111;
 
                 Random rnd = new Random();
-                int a = rnd.Next(1, 100);
-                int b = rnd.Next(1, 100);
+                int a = rnd.Next(1, 64);
+                int b = rnd.Next(1, 64);
 
                 Console.WriteLine(chars);
+                for (int i = 0; i < chars.Length; i++)
+                    Console.Write(chars[(a * i + b) % chars.Length]);
+                Console.WriteLine();
                 Console.WriteLine("a = " + a);
                 Console.WriteLine("b = " + b);
 
